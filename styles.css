@@ -102,7 +102,7 @@ h1, h2, h3 {
     aspect-ratio: 1821.21 / 600; 
     /* El ancho máximo define el tamaño visual sin romper la proporción */
     width: 100%;
-    max-width: 280px; 
+    max-width: 340px; 
     height: auto;
 }
 

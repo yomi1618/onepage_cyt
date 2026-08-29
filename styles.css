@@ -147,6 +147,45 @@ h1, h2, h3 {
         opacity: 1;
     }
 }
+
+/* ========================================================
+   ANIMACIÓN DE SALIDA (Escala y Transparencia)
+   ======================================================== */
+.main-header.is-exiting {
+    /* Mantiene las propiedades del sticky mientras se anima la salida */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--cyt-primary);
+    padding: var(--space-sm) 0;
+    border-bottom: none;
+    
+    /* Nueva animación de salida */
+    animation: fadeScaleOut 0.4s ease-in-out forwards;
+}
+
+.main-header.is-exiting .header-container a {
+    max-width: 130px;
+}
+
+.main-header.is-exiting .main-logo {
+    filter: brightness(0) invert(1);
+}
+
+/* El keyframe que crea el efecto de crecer y desaparecer */
+@keyframes fadeScaleOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(1.05); /* Crece ligeramente simulando volver al logo grande */
+    }
+}
+
 /* ========================================================
    HERO SECTION
    ======================================================== */

@@ -112,7 +112,41 @@ h1, h2, h3 {
     object-fit: contain; /* Garantiza que la imagen no se deforme */
     display: block;
 }
+/* ========================================================
+   HEADER ANCLADO (Sticky / Azul #00629b)
+   ======================================================== */
+.main-header.is-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--cyt-primary); /* Azul oficial #00629b */
+    padding: var(--space-sm) 0;
+    border-bottom: none;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    animation: slideDown 0.3s ease-out;
+}
 
+/* Tamaño de logo ajustado a 130px */
+.main-header.is-sticky .header-container a {
+    max-width: 130px;
+}
+
+/* Transforma cualquier logo (SVG o PNG) a blanco puro */
+.main-header.is-sticky .main-logo {
+    filter: brightness(0) invert(1);
+}
+
+/* Animación de entrada suave */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
 /* ========================================================
    HERO SECTION
    ======================================================== */

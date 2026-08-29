@@ -214,6 +214,20 @@ h1, h2, h3 {
 }
 
 /* ========================================================
+   VARIABLES ESPECÍFICAS DE TARJETAS (Cromática Oficial)
+   ======================================================== */
+:root {
+    /* Paleta Conecta Empresas */
+    --ce-primary: #112e42;
+    --ce-secondary-1: #00629b;
+    --ce-secondary-2: #ef4036;
+
+    /* Paleta Conecta Universidades */
+    --cu-primary: #9d7cb0;
+    --cu-secondary: #00bcca;
+}
+
+/* ========================================================
    ECOSISTEMA DUAL (CSS GRID)
    ======================================================== */
 .ecosystem-section {
@@ -227,18 +241,56 @@ h1, h2, h3 {
     gap: var(--space-lg);
 }
 
+/* Base Estructural de la Tarjeta */
 .card {
-    background: var(--bg-light);
     padding: var(--space-lg);
-    border-top: 3px solid var(--cyt-primary);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+/* --------------------------------------------------------
+   TARJETA 1: CONECTA EMPRESAS (Bento Box / Estático)
+   -------------------------------------------------------- */
+.card-empresas {
+    background: var(--bg-light);
+    border: 1px solid rgba(17, 46, 66, 0.15); /* Divisor sutil corporativo */
+    border-top: 3px solid var(--ce-primary);
+    border-radius: 2px; /* Corte recto y formal */
     box-shadow: 0 12px 24px rgba(0,0,0,0.03);
-    transition: transform 0.3s ease;
 }
 
-.card:hover {
+.card-empresas:hover {
     transform: translateY(-6px);
+    border-top-color: var(--ce-secondary-1); /* #00629b al interactuar */
 }
 
+.card-empresas .card-desc {
+    color: var(--ce-primary);
+}
+
+/* --------------------------------------------------------
+   TARJETA 2: CONECTA UNIVERSIDADES (Cinético / Tribal)
+   -------------------------------------------------------- */
+.card-universidades {
+    background-color: var(--ce-primary); /* Fondo oscuro reduce fatiga */
+    border: 1px solid rgba(157, 124, 176, 0.3);
+    border-radius: 24px; /* Rompe la rigidez con curvas orgánicas */
+    box-shadow: 0 8px 32px rgba(157, 124, 176, 0.15); /* Glow Púrpura #9d7cb0 */
+}
+
+.card-universidades:hover {
+    transform: translateY(-6px) scale(1.02); /* Efecto de levitación */
+    box-shadow: 0 12px 40px rgba(0, 188, 204, 0.3); /* Resplandor Neón Cian #00bcca */
+}
+
+.card-universidades .card-desc {
+    color: rgba(255, 255, 255, 0.85); /* Legibilidad sobre oscuro */
+}
+
+/* ========================================================
+   HEADER DE TARJETAS, LOGOS Y ETIQUETAS
+   ======================================================== */
 .card-header {
     display: flex;
     justify-content: space-between;
@@ -246,32 +298,44 @@ h1, h2, h3 {
     margin-bottom: var(--space-md);
 }
 
-.card h3 {
-    font-size: 1.5rem;
-    color: var(--text-dark);
+/* Logos que reemplazan a los H3 */
+.card-logo {
+    max-width: 140px; /* Tamaño controlado y elegante */
+    height: auto;
+    object-fit: contain;
+    display: block;
 }
 
+/* Ajuste de color automático si subes los logos en negro puro SVG */
+.logo-ce {
+    /* Si el logo CE está en SVG negro, esto no afecta, mantiene sus colores. */
+}
+.logo-cu {
+    /* Invierte a blanco el logo de Universidades para que contraste en el fondo oscuro */
+    filter: brightness(0) invert(1); 
+}
+
+/* Etiquetas (Tags) */
 .tag {
     font-size: 0.75rem;
-    padding: 3px 9px;
+    padding: 4px 10px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
 .tag-ce {
-    background: rgba(17, 46, 66, 0.1);
-    color: #112e42;
+    background-color: rgba(0, 98, 155, 0.1);
+    color: var(--ce-secondary-1); /* #00629b */
+    border: 1px solid rgba(0, 98, 155, 0.2);
+    border-radius: 2px; /* Etiqueta corporativa estática */
 }
 
 .tag-cu {
-    background: rgba(157, 124, 176, 0.1);
-    color: #9d7cb0;
+    background-color: rgba(0, 188, 204, 0.15);
+    color: var(--cu-secondary); /* #00bcca */
+    border: 1px solid rgba(0, 188, 204, 0.3);
+    border-radius: 12px; /* Etiqueta fluida y juvenil */
 }
-
-.card-desc {
-    color: var(--text-muted);
-}
-
 /* ========================================================
    CONTACTO ANTICIPADO
    ======================================================== */

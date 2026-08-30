@@ -305,7 +305,7 @@ h1, h2, h3 {
     height: auto;
     object-fit: contain;
     display: block;
-    transform: translateX(-15px);
+    transform: translateX(-8px);
 }
 
 /* Ajuste de color automático si subes los logos en negro puro SVG */

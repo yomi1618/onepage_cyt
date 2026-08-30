@@ -301,7 +301,7 @@ h1, h2, h3 {
 
 /* Logos que reemplazan a los H3 */
 .card-logo {
-    max-width: 440px; /* Tamaño controlado y elegante */
+    max-width: 270px; /* Tamaño controlado y elegante */
     height: auto;
     object-fit: contain;
     display: block;

@@ -281,7 +281,7 @@ h1, h2, h3 {
 
 .card-universidades:hover {
     transform: translateY(-6px) scale(1.02); /* Efecto de levitación */
-    box-shadow: 0 12px 40px rgba(0, 188, 204, 0.3); /* Resplandor Neón Cian #00bcca */
+    box-shadow: 0 12px 40px rgba(157, 124, 176, 0.3); /* Resplandor Neón Cian #00bcca */
 }
 
 .card-universidades .card-desc {
@@ -301,11 +301,11 @@ h1, h2, h3 {
 
 /* Logos que reemplazan a los H3 */
 .card-logo {
-    max-width: 270px; /* Tamaño controlado y elegante */
+    max-width: 300px; /* Tamaño controlado y elegante */
     height: auto;
     object-fit: contain;
     display: block;
-    transform: translateX(-8px);
+    transform: translateX(-10px);
 }
 
 /* Ajuste de color automático si subes los logos en negro puro SVG */

@@ -365,25 +365,19 @@ h1, h2, h3 {
     flex-direction: column;
     justify-content: space-between;
     transition: transform 0.3s ease;
-    position: relative; 
-    overflow: hidden; /* Evita que el isotipo se desborde si es muy grande */
-}
-/* Para garantizar que los textos y botones queden por encima del isotipo */
-.action-card > * {
-    position: relative;
-    z-index: 1;
 }
 
+.btn-solid-red, 
+.btn-group-horizontal {
+    margin-top: auto; /* Empuja el bloque interactivo y el logo hacia el fondo absoluto de la tarjeta */
+}
 /* Estilo y posicionamiento del Isotipo */
 .card-isotipo {
-    position: absolute;
-    bottom: -40x; /* Ajusta estos valores para moverlo más arriba o abajo */
-    right: -20px;  /* Ajusta para moverlo más a la izquierda o derecha */
-    width: 140px;  /* Controla qué tan grande se ve la marca de agua */
+    display: block;
+    align-self: flex-end; /* Lo ancla matemáticamente a la esquina derecha */
+    margin-top: var(--space-md); /* Crea la separación física directa debajo de los botones */
+    width: 75px; /* Tamaño corporativo prudente. Ajustable según el peso de tu SVG */
     height: auto;
-    opacity: 0.08; /* Transparencia para que no compita con los textos */
-    pointer-events: none; /* Evita que estorbe al hacer clic en los botones */
-    z-index: 0;
 }
 
 .action-card:hover { transform: translateY(-5px); }

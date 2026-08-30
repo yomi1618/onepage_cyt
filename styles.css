@@ -319,10 +319,12 @@ h1, h2, h3 {
 
 /* Etiquetas (Tags) */
 .tag {
+    display: inline-block;
     font-size: 0.75rem;
     padding: 4px 10px;
     font-weight: 700;
     text-transform: uppercase;
+    line-height: 1
 }
 
 .tag-ce {

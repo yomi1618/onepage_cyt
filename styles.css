@@ -281,7 +281,7 @@ h1, h2, h3 {
 
 .card-universidades:hover {
     transform: translateY(-6px) scale(1.02); /* Efecto de levitación */
-    box-shadow: 0 12px 40px rgba(157, 124, 176, 0.8); /* Resplandor Neón Cian #00bcca */
+    box-shadow: 0 12px 40px rgba(0, 188, 202, 0.34); /* Resplandor Neón Cian #00bcca */
 }
 
 .card-universidades .card-desc {
@@ -334,7 +334,7 @@ h1, h2, h3 {
 
 .tag-cu {
     background-color: rgba(0, 188, 204, 0.15);
-    color: var(--cu-secondary); /* #00bcca */
+    color: var(--cu-primary); /* #00bcca */
     border: 1px solid rgba(0, 188, 204, 0.3);
     border-radius: 12px; /* Etiqueta fluida y juvenil */
 }

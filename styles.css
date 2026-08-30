@@ -377,7 +377,7 @@ h1, h2, h3 {
 /* Estilo y posicionamiento del Isotipo */
 .card-isotipo {
     position: absolute;
-    bottom: -15px; /* Ajusta estos valores para moverlo más arriba o abajo */
+    bottom: 15px; /* Ajusta estos valores para moverlo más arriba o abajo */
     right: -15px;  /* Ajusta para moverlo más a la izquierda o derecha */
     width: 140px;  /* Controla qué tan grande se ve la marca de agua */
     height: auto;

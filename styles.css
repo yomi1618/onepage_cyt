@@ -376,7 +376,7 @@ h1, h2, h3 {
     display: block;
     align-self: flex-end; /* Lo ancla matemáticamente a la esquina derecha */
     margin-top: var(--space-md); /* Crea la separación física directa debajo de los botones */
-    width: 34px; /* Tamaño corporativo prudente. Ajustable según el peso de tu SVG */
+    width: 100px; /* Tamaño corporativo prudente. Ajustable según el peso de tu SVG */
     height: auto;
 }
 

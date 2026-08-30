@@ -312,10 +312,10 @@ h1, h2, h3 {
 .logo-ce {
     /* Si el logo CE está en SVG negro, esto no afecta, mantiene sus colores. */
 }
-.logo-cu {
+/*.logo-cu {
     /* Invierte a blanco el logo de Universidades para que contraste en el fondo oscuro */
     filter: brightness(0) invert(1); 
-}
+}*/
 
 /* Etiquetas (Tags) */
 .tag {

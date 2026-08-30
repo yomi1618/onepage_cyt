@@ -293,7 +293,7 @@ h1, h2, h3 {
    ======================================================== */
 .card-header {
     display: flex;
-   flex-direction: column; /* Apila el logo arriba y la etiqueta abajo */
+    flex-direction: column; /* Apila el logo arriba y la etiqueta abajo */
     align-items: flex-start; /* Asegura que todo quede alineado a la izquierda */
     gap: var(--space-md); /* Añade espacio vertical entre el logo y la etiqueta */
     margin-bottom: var(--space-md);
@@ -301,7 +301,7 @@ h1, h2, h3 {
 
 /* Logos que reemplazan a los H3 */
 .card-logo {
-    max-width: 220px; /* Tamaño controlado y elegante */
+    max-width: 440px; /* Tamaño controlado y elegante */
     height: auto;
     object-fit: contain;
     display: block;

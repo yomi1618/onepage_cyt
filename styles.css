@@ -324,11 +324,10 @@ h1, h2, h3 {
     padding: 4px 10px;
     font-weight: 700;
     text-transform: uppercase;
-    line-height: 1
+    line-height: 1;
 }
 
 .tag-ce {
-    padding: 4px 10px;
     background-color: rgba(0, 98, 155, 0.1);
     color: var(--ce-secondary-1); /* #00629b */
     border: 1px solid rgba(0, 98, 155, 0.2);
@@ -336,7 +335,6 @@ h1, h2, h3 {
 }
 
 .tag-cu {
-    padding: 4px 10px;
     background-color: rgba(0, 188, 204, 0.15);
     color: var(--cu-secondary); /* #00bcca */
     border: 1px solid rgba(0, 188, 204, 0.3);

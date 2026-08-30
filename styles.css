@@ -365,7 +365,27 @@ h1, h2, h3 {
     flex-direction: column;
     justify-content: space-between;
     transition: transform 0.3s ease;
+    position: relative; 
+    overflow: hidden; /* Evita que el isotipo se desborde si es muy grande */
 }
+/* Para garantizar que los textos y botones queden por encima del isotipo */
+.action-card > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Estilo y posicionamiento del Isotipo */
+.card-isotipo {
+    position: absolute;
+    bottom: -15px; /* Ajusta estos valores para moverlo más arriba o abajo */
+    right: -15px;  /* Ajusta para moverlo más a la izquierda o derecha */
+    width: 140px;  /* Controla qué tan grande se ve la marca de agua */
+    height: auto;
+    opacity: 0.08; /* Transparencia para que no compita con los textos */
+    pointer-events: none; /* Evita que estorbe al hacer clic en los botones */
+    z-index: 0;
+}
+
 .action-card:hover { transform: translateY(-5px); }
 .card-title { font-size: 1.5rem; font-weight: 700; margin-bottom: var(--space-sm); }
 .card-text { font-size: 1rem; margin-bottom: var(--space-lg); line-height: 1.5; }
